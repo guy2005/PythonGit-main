@@ -2,8 +2,9 @@ pipeline {
     agent any
 
     environment {
+        PATH       = "C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python314;C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python314\\Scripts;${env.PATH}"
         VENV_DIR   = 'venv'
-        DEPLOY_DIR = 'D:\\BackupFromG\\SAU\\class\\632218\\ws\\jenkins1\\deploy'
+        DEPLOY_DIR = 'C:\\deploy'
     }
 
     options {
